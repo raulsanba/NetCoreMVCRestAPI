@@ -1,1 +1,10 @@
-﻿
+﻿- Creas Model Command con las properties: Id, HowTo, Line, Platform.
+- Creas Repository (ICommanderRepo). Es una interfaz que llevara los metodos necesarios para interactuar con la DB. 
+- Te puedes crear tambien una mock repo para probar cosas primero, implementando la ICommanderRepo.
+- Te creas el controlador. En el controlador se configuran las http rutas.
+- Nota teorica: En Startup.ConfigureServices se configura un Service container de todos los servicios que vas a usar en tu aplicacion.
+  Luego en CommandController aplicaras tu ICommanderRepo repository usando dependency injection en el constructor del controlador.
+- Creas SQL DB. Se necesitan instalar todos los paquetes de Entity Framework para interactuar con la DB.
+- Creas CommanderContext : DbContext
+- Instalar Automapper, para mapear con DTO.
+- Creas DTOs
